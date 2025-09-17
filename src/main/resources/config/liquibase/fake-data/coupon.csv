@@ -1,0 +1,11 @@
+id;code;description;discount_type;discount_value;valid_from;valid_until;max_uses;current_uses;min_order_value;is_active
+1;hmph;../fake-data/blob/hipster.txt;FIXED_AMOUNT;29220.82;2025-09-17T15:24:05;2025-09-17T14:33:05;31519;27426;19844.32;false
+2;bruised;../fake-data/blob/hipster.txt;FREE_SHIPPING;21009.42;2025-09-16T23:52:27;2025-09-17T06:46:32;9145;29437;13659.05;true
+3;aw swordfish posh;../fake-data/blob/hipster.txt;FREE_SHIPPING;7894.61;2025-09-17T08:12:43;2025-09-17T13:40:52;22645;12636;543.03;true
+4;cinch favorite instead;../fake-data/blob/hipster.txt;FREE_SHIPPING;1344.3;2025-09-16T22:52:26;2025-09-17T08:02:30;1027;31530;4736.66;true
+5;yesterday and;../fake-data/blob/hipster.txt;PERCENTAGE;10653.04;2025-09-17T05:13:40;2025-09-16T22:14:03;11660;15156;14235.65;false
+6;netsuke;../fake-data/blob/hipster.txt;FIXED_AMOUNT;21071.21;2025-09-17T02:31:45;2025-09-17T04:15:26;13350;30844;22267.04;false
+7;hunt psst garage;../fake-data/blob/hipster.txt;BUY_X_GET_Y;4622.41;2025-09-17T03:24:27;2025-09-17T09:59:41;10147;1143;29882.42;false
+8;zowie upbeat corner;../fake-data/blob/hipster.txt;PERCENTAGE;21524.28;2025-09-17T00:23:37;2025-09-17T03:43:44;29801;16315;16495.65;true
+9;unfortunately gerbil aha;../fake-data/blob/hipster.txt;FREE_SHIPPING;24033.89;2025-09-17T14:36:30;2025-09-17T11:56:16;10289;28490;28674.93;true
+10;ew boo absent;../fake-data/blob/hipster.txt;FREE_SHIPPING;21015;2025-09-17T16:14:08;2025-09-17T06:35:27;9909;27325;19932.31;false

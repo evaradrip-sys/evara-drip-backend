@@ -1,0 +1,37 @@
+{
+  "evaradripApp": {
+    "userProfile": {
+      "home": {
+        "title": "UserProfiles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया User Profile बनाएँ",
+        "createOrEditLabel": "User Profile बनाएँ या संपादित करें",
+        "notFound": "No User Profiles found"
+      },
+      "created": "एक नया User Profile [identifier: {{ param }}] तैयार है",
+      "updated": "एक User Profile [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "User Profile [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "User Profile [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "User Profile"
+      },
+      "id": "ID",
+      "phoneNumber": "Phone Number",
+      "dateOfBirth": "Date Of Birth",
+      "gender": "Gender",
+      "avatarUrl": "Avatar Url",
+      "loyaltyPoints": "Loyalty Points",
+      "membershipLevel": "Membership Level",
+      "preferences": "Preferences",
+      "newsletterSubscribed": "Newsletter Subscribed",
+      "user": "User",
+      "addresses": "Addresses",
+      "orders": "Orders",
+      "notifications": "Notifications",
+      "wishlist": "Wishlist",
+      "coupons": "Coupons"
+    }
+  }
+}

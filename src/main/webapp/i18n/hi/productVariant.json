@@ -1,0 +1,31 @@
+{
+  "evaradripApp": {
+    "productVariant": {
+      "home": {
+        "title": "ProductVariants",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Product Variant बनाएँ",
+        "createOrEditLabel": "Product Variant बनाएँ या संपादित करें",
+        "notFound": "No Product Variants found"
+      },
+      "created": "एक नया Product Variant [identifier: {{ param }}] तैयार है",
+      "updated": "एक Product Variant [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Product Variant [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Product Variant [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Product Variant"
+      },
+      "id": "ID",
+      "variantSize": "Variant Size",
+      "color": "Color",
+      "sku": "Sku",
+      "stockCount": "Stock Count",
+      "priceAdjustment": "Price Adjustment",
+      "barcode": "Barcode",
+      "weight": "Weight",
+      "product": "Product"
+    }
+  }
+}

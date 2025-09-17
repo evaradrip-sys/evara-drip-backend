@@ -1,0 +1,26 @@
+{
+  "annotations": {
+    "changelogDate": "20250917214717"
+  },
+  "applications": ["evaradrip"],
+  "documentation": "Product-Promotion junction table",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "priority",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["min"],
+      "fieldValidateRulesMin": "1"
+    },
+    {
+      "fieldName": "isExclusive",
+      "fieldType": "Boolean"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "ProductPromotion",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

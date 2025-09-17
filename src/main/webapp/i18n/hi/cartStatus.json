@@ -1,0 +1,12 @@
+{
+  "evaradripApp": {
+    "CartStatus": {
+      "null": "",
+      "ACTIVE": "ACTIVE",
+      "ABANDONED": "ABANDONED",
+      "CONVERTED": "CONVERTED",
+      "EXPIRED": "EXPIRED",
+      "MERGED": "MERGED"
+    }
+  }
+}

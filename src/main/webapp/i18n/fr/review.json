@@ -1,0 +1,34 @@
+{
+  "evaradripApp": {
+    "review": {
+      "home": {
+        "title": "Reviews",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Review",
+        "createOrEditLabel": "Créer ou éditer un Review",
+        "notFound": "Aucun Review trouvé"
+      },
+      "created": "Un nouveau Review a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Review avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Review avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Review {{ id }} ?"
+      },
+      "detail": {
+        "title": "Review"
+      },
+      "id": "ID",
+      "rating": "Rating",
+      "title": "Title",
+      "comment": "Comment",
+      "helpfulCount": "Helpful Count",
+      "notHelpfulCount": "Not Helpful Count",
+      "verifiedPurchase": "Verified Purchase",
+      "status": "Status",
+      "response": "Response",
+      "responseDate": "Response Date",
+      "user": "User",
+      "product": "Product"
+    }
+  }
+}

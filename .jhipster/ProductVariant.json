@@ -1,0 +1,66 @@
+{
+  "annotations": {
+    "changelogDate": "20250917213717"
+  },
+  "applications": ["evaradrip"],
+  "documentation": "Product Variants (Size, Color combinations)",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "variantSize",
+      "fieldType": "ClothingSize",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "XS,S,M,L,XL,XXL,XXXL,FREE_SIZE"
+    },
+    {
+      "fieldName": "color",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "50"
+    },
+    {
+      "fieldName": "sku",
+      "fieldType": "String",
+      "fieldValidateRules": ["unique", "required", "maxlength"],
+      "fieldValidateRulesMaxlength": "100"
+    },
+    {
+      "fieldName": "stockCount",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required", "min"],
+      "fieldValidateRulesMin": "0"
+    },
+    {
+      "fieldName": "priceAdjustment",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "barcode",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "100"
+    },
+    {
+      "fieldName": "weight",
+      "fieldType": "BigDecimal",
+      "fieldValidateRules": ["min"],
+      "fieldValidateRulesMin": "0"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "ProductVariant",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "product",
+      "otherEntityRelationshipName": "variants",
+      "relationshipName": "product",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

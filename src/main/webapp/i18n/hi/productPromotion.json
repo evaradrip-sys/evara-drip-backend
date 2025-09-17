@@ -1,0 +1,25 @@
+{
+  "evaradripApp": {
+    "productPromotion": {
+      "home": {
+        "title": "ProductPromotions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Product Promotion बनाएँ",
+        "createOrEditLabel": "Product Promotion बनाएँ या संपादित करें",
+        "notFound": "No Product Promotions found"
+      },
+      "created": "एक नया Product Promotion [identifier: {{ param }}] तैयार है",
+      "updated": "एक Product Promotion [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Product Promotion [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Product Promotion [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Product Promotion"
+      },
+      "id": "ID",
+      "priority": "Priority",
+      "isExclusive": "Is Exclusive"
+    }
+  }
+}

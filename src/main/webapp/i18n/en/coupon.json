@@ -1,0 +1,34 @@
+{
+  "evaradripApp": {
+    "coupon": {
+      "home": {
+        "title": "Coupons",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Coupon",
+        "createOrEditLabel": "Create or edit a Coupon",
+        "notFound": "No Coupons found"
+      },
+      "created": "A new Coupon is created with identifier {{ param }}",
+      "updated": "A Coupon is updated with identifier {{ param }}",
+      "deleted": "A Coupon is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Coupon {{ id }}?"
+      },
+      "detail": {
+        "title": "Coupon"
+      },
+      "id": "ID",
+      "code": "Code",
+      "description": "Description",
+      "discountType": "Discount Type",
+      "discountValue": "Discount Value",
+      "validFrom": "Valid From",
+      "validUntil": "Valid Until",
+      "maxUses": "Max Uses",
+      "currentUses": "Current Uses",
+      "minOrderValue": "Min Order Value",
+      "isActive": "Is Active",
+      "users": "Users"
+    }
+  }
+}

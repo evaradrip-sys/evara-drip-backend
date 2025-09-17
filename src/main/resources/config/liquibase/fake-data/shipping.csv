@@ -1,0 +1,11 @@
+id;carrier;tracking_number;estimated_delivery;actual_delivery;shipping_cost;status;notes
+1;omelet;inasmuch supposing;2025-09-17;2025-09-17T05:19:58;23938.48;DELIVERED;../fake-data/blob/hipster.txt
+2;helplessly on hopelessly;insert;2025-09-17;2025-09-17T20:01:51;4015.23;IN_TRANSIT;../fake-data/blob/hipster.txt
+3;whether bore annual;petty;2025-09-17;2025-09-17T07:48:55;29178.7;SHIPPED;../fake-data/blob/hipster.txt
+4;however;yellowish oh off;2025-09-17;2025-09-17T15:28:20;3374.68;IN_TRANSIT;../fake-data/blob/hipster.txt
+5;carouse wetly;aha;2025-09-17;2025-09-17T01:59:44;24661.17;RETURNED;../fake-data/blob/hipster.txt
+6;searchingly uniform inasmuch;neck;2025-09-17;2025-09-17T04:24:59;11395.15;OUT_FOR_DELIVERY;../fake-data/blob/hipster.txt
+7;airbrush graceful;where extension;2025-09-17;2025-09-17T17:26:49;7275.03;OUT_FOR_DELIVERY;../fake-data/blob/hipster.txt
+8;when ouch beside;after bah;2025-09-17;2025-09-17T10:37:14;29738.26;FAILED;../fake-data/blob/hipster.txt
+9;contractor airbrush;gee to making;2025-09-17;2025-09-17T12:58:51;30598.41;PENDING;../fake-data/blob/hipster.txt
+10;to including;reassemble consequently till;2025-09-17;2025-09-17T17:10:36;602.43;PROCESSING;../fake-data/blob/hipster.txt

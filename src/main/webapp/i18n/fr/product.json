@@ -1,0 +1,51 @@
+{
+  "evaradripApp": {
+    "product": {
+      "home": {
+        "title": "Products",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Product",
+        "createOrEditLabel": "Créer ou éditer un Product",
+        "notFound": "Aucun Product trouvé"
+      },
+      "created": "Un nouveau Product a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Product avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Product avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Product {{ id }} ?"
+      },
+      "detail": {
+        "title": "Product"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "price": "Price",
+      "originalPrice": "Original Price",
+      "sku": "Sku",
+      "isNew": "Is New",
+      "isOnSale": "Is On Sale",
+      "rating": "Rating",
+      "reviewsCount": "Reviews Count",
+      "stockCount": "Stock Count",
+      "inStock": "In Stock",
+      "features": "Features",
+      "metaTitle": "Meta Title",
+      "metaDescription": "Meta Description",
+      "metaKeywords": "Meta Keywords",
+      "status": "Status",
+      "weight": "Weight",
+      "dimensions": "Dimensions",
+      "images": "Images",
+      "variants": "Variants",
+      "reviews": "Reviews",
+      "inventory": "Inventory",
+      "promotions": "Promotions",
+      "brand": "Brand",
+      "category": "Category",
+      "wishlisted": "Wishlisted",
+      "applicablePromotions": "Applicable Promotions",
+      "featuredInCategories": "Featured In Categories"
+    }
+  }
+}

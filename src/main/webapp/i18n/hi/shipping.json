@@ -1,0 +1,31 @@
+{
+  "evaradripApp": {
+    "shipping": {
+      "home": {
+        "title": "Shippings",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Shipping बनाएँ",
+        "createOrEditLabel": "Shipping बनाएँ या संपादित करें",
+        "notFound": "No Shippings found"
+      },
+      "created": "एक नया Shipping [identifier: {{ param }}] तैयार है",
+      "updated": "एक Shipping [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Shipping [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Shipping [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Shipping"
+      },
+      "id": "ID",
+      "carrier": "Carrier",
+      "trackingNumber": "Tracking Number",
+      "estimatedDelivery": "Estimated Delivery",
+      "actualDelivery": "Actual Delivery",
+      "shippingCost": "Shipping Cost",
+      "status": "Status",
+      "notes": "Notes",
+      "order": "Order"
+    }
+  }
+}

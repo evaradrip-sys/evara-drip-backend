@@ -1,0 +1,35 @@
+{
+  "evaradripApp": {
+    "userAddress": {
+      "home": {
+        "title": "UserAddresses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया User Address बनाएँ",
+        "createOrEditLabel": "User Address बनाएँ या संपादित करें",
+        "notFound": "No User Addresses found"
+      },
+      "created": "एक नया User Address [identifier: {{ param }}] तैयार है",
+      "updated": "एक User Address [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "User Address [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "User Address [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "User Address"
+      },
+      "id": "ID",
+      "addressType": "Address Type",
+      "fullName": "Full Name",
+      "phoneNumber": "Phone Number",
+      "streetAddress": "Street Address",
+      "streetAddress2": "Street Address 2",
+      "city": "City",
+      "state": "State",
+      "zipCode": "Zip Code",
+      "country": "Country",
+      "landmark": "Landmark",
+      "isDefault": "Is Default",
+      "user": "User"
+    }
+  }
+}

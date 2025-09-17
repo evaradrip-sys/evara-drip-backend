@@ -1,0 +1,34 @@
+{
+  "evaradripApp": {
+    "coupon": {
+      "home": {
+        "title": "Coupons",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Coupon बनाएँ",
+        "createOrEditLabel": "Coupon बनाएँ या संपादित करें",
+        "notFound": "No Coupons found"
+      },
+      "created": "एक नया Coupon [identifier: {{ param }}] तैयार है",
+      "updated": "एक Coupon [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Coupon [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Coupon [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Coupon"
+      },
+      "id": "ID",
+      "code": "Code",
+      "description": "Description",
+      "discountType": "Discount Type",
+      "discountValue": "Discount Value",
+      "validFrom": "Valid From",
+      "validUntil": "Valid Until",
+      "maxUses": "Max Uses",
+      "currentUses": "Current Uses",
+      "minOrderValue": "Min Order Value",
+      "isActive": "Is Active",
+      "users": "Users"
+    }
+  }
+}

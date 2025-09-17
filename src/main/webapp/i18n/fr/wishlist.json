@@ -1,0 +1,25 @@
+{
+  "evaradripApp": {
+    "wishlist": {
+      "home": {
+        "title": "Wishlists",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Wishlist",
+        "createOrEditLabel": "Créer ou éditer un Wishlist",
+        "notFound": "Aucun Wishlist trouvé"
+      },
+      "created": "Un nouveau Wishlist a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Wishlist avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Wishlist avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Wishlist {{ id }} ?"
+      },
+      "detail": {
+        "title": "Wishlist"
+      },
+      "id": "ID",
+      "priority": "Priority",
+      "notes": "Notes"
+    }
+  }
+}

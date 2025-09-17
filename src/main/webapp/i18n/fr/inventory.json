@@ -1,0 +1,30 @@
+{
+  "evaradripApp": {
+    "inventory": {
+      "home": {
+        "title": "Inventories",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Inventory",
+        "createOrEditLabel": "Créer ou éditer un Inventory",
+        "notFound": "Aucun Inventory trouvé"
+      },
+      "created": "Un nouveau Inventory a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Inventory avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Inventory avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Inventory {{ id }} ?"
+      },
+      "detail": {
+        "title": "Inventory"
+      },
+      "id": "ID",
+      "quantity": "Quantity",
+      "reservedQuantity": "Reserved Quantity",
+      "warehouse": "Warehouse",
+      "lastRestocked": "Last Restocked",
+      "reorderLevel": "Reorder Level",
+      "reorderQuantity": "Reorder Quantity",
+      "product": "Product"
+    }
+  }
+}

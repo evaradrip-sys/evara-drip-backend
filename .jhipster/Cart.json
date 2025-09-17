@@ -1,0 +1,47 @@
+{
+  "annotations": {
+    "changelogDate": "20250917214017"
+  },
+  "applications": ["evaradrip"],
+  "documentation": "Shopping Cart entity",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "sessionId",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "255"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "CartStatus",
+      "fieldValues": "ACTIVE,ABANDONED,CONVERTED,EXPIRED,MERGED"
+    },
+    {
+      "fieldName": "expiresAt",
+      "fieldType": "Instant"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Cart",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "relationshipName": "user",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one",
+      "relationshipWithBuiltInEntity": true
+    },
+    {
+      "otherEntityName": "cartItem",
+      "otherEntityRelationshipName": "cart",
+      "relationshipName": "items",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

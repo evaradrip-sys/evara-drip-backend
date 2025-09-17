@@ -1,0 +1,31 @@
+{
+  "evaradripApp": {
+    "shipping": {
+      "home": {
+        "title": "Shippings",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Shipping",
+        "createOrEditLabel": "Créer ou éditer un Shipping",
+        "notFound": "Aucun Shipping trouvé"
+      },
+      "created": "Un nouveau Shipping a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Shipping avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Shipping avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Shipping {{ id }} ?"
+      },
+      "detail": {
+        "title": "Shipping"
+      },
+      "id": "ID",
+      "carrier": "Carrier",
+      "trackingNumber": "Tracking Number",
+      "estimatedDelivery": "Estimated Delivery",
+      "actualDelivery": "Actual Delivery",
+      "shippingCost": "Shipping Cost",
+      "status": "Status",
+      "notes": "Notes",
+      "order": "Order"
+    }
+  }
+}

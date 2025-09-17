@@ -1,0 +1,35 @@
+{
+  "evaradripApp": {
+    "userAddress": {
+      "home": {
+        "title": "UserAddresses",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau User Address",
+        "createOrEditLabel": "Créer ou éditer un User Address",
+        "notFound": "Aucun User Address trouvé"
+      },
+      "created": "Un nouveau User Address a été créé avec l'identifiant {{ param }}",
+      "updated": "Le User Address avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le User Address avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le User Address {{ id }} ?"
+      },
+      "detail": {
+        "title": "User Address"
+      },
+      "id": "ID",
+      "addressType": "Address Type",
+      "fullName": "Full Name",
+      "phoneNumber": "Phone Number",
+      "streetAddress": "Street Address",
+      "streetAddress2": "Street Address 2",
+      "city": "City",
+      "state": "State",
+      "zipCode": "Zip Code",
+      "country": "Country",
+      "landmark": "Landmark",
+      "isDefault": "Is Default",
+      "user": "User"
+    }
+  }
+}

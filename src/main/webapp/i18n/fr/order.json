@@ -1,0 +1,47 @@
+{
+  "evaradripApp": {
+    "order": {
+      "home": {
+        "title": "Orders",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Order",
+        "createOrEditLabel": "Créer ou éditer un Order",
+        "notFound": "Aucun Order trouvé"
+      },
+      "created": "Un nouveau Order a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Order avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Order avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Order {{ id }} ?"
+      },
+      "detail": {
+        "title": "Order"
+      },
+      "id": "ID",
+      "orderNumber": "Order Number",
+      "status": "Status",
+      "totalAmount": "Total Amount",
+      "subtotalAmount": "Subtotal Amount",
+      "taxAmount": "Tax Amount",
+      "shippingAmount": "Shipping Amount",
+      "discountAmount": "Discount Amount",
+      "paymentMethod": "Payment Method",
+      "paymentStatus": "Payment Status",
+      "shippingMethod": "Shipping Method",
+      "trackingNumber": "Tracking Number",
+      "notes": "Notes",
+      "cancelReason": "Cancel Reason",
+      "returnReason": "Return Reason",
+      "refundAmount": "Refund Amount",
+      "estimatedDeliveryDate": "Estimated Delivery Date",
+      "deliveredDate": "Delivered Date",
+      "shippedDate": "Shipped Date",
+      "items": "Items",
+      "payments": "Payments",
+      "shipping": "Shipping",
+      "shippingAddress": "Shipping Address",
+      "billingAddress": "Billing Address",
+      "user": "User"
+    }
+  }
+}

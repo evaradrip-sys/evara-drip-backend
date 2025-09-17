@@ -1,0 +1,11 @@
+id;type;title;message;is_read;metadata;user_id
+1;ORDER_SHIPPED;if pace as;../fake-data/blob/hipster.txt;true;../fake-data/blob/hipster.txt;1
+2;PAYMENT_SUCCESS;too aha gadzooks;../fake-data/blob/hipster.txt;true;../fake-data/blob/hipster.txt;2
+3;ORDER_SHIPPED;ouch once afore;../fake-data/blob/hipster.txt;false;../fake-data/blob/hipster.txt;3
+4;ORDER_DELIVERED;sundae ugh;../fake-data/blob/hipster.txt;false;../fake-data/blob/hipster.txt;4
+5;ORDER_SHIPPED;helplessly naturally grimy;../fake-data/blob/hipster.txt;false;../fake-data/blob/hipster.txt;5
+6;PAYMENT_FAILED;strictly presume;../fake-data/blob/hipster.txt;false;../fake-data/blob/hipster.txt;6
+7;ORDER_PLACED;immense;../fake-data/blob/hipster.txt;true;../fake-data/blob/hipster.txt;7
+8;ORDER_PLACED;webbed besides;../fake-data/blob/hipster.txt;false;../fake-data/blob/hipster.txt;8
+9;WISHLIST;yahoo;../fake-data/blob/hipster.txt;false;../fake-data/blob/hipster.txt;9
+10;PAYMENT_SUCCESS;justly patiently;../fake-data/blob/hipster.txt;false;../fake-data/blob/hipster.txt;10

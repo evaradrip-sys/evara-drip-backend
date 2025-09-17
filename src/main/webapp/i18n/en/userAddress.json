@@ -1,0 +1,35 @@
+{
+  "evaradripApp": {
+    "userAddress": {
+      "home": {
+        "title": "User Addresses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new User Address",
+        "createOrEditLabel": "Create or edit a User Address",
+        "notFound": "No User Addresses found"
+      },
+      "created": "A new User Address is created with identifier {{ param }}",
+      "updated": "A User Address is updated with identifier {{ param }}",
+      "deleted": "A User Address is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete User Address {{ id }}?"
+      },
+      "detail": {
+        "title": "User Address"
+      },
+      "id": "ID",
+      "addressType": "Address Type",
+      "fullName": "Full Name",
+      "phoneNumber": "Phone Number",
+      "streetAddress": "Street Address",
+      "streetAddress2": "Street Address 2",
+      "city": "City",
+      "state": "State",
+      "zipCode": "Zip Code",
+      "country": "Country",
+      "landmark": "Landmark",
+      "isDefault": "Is Default",
+      "user": "User"
+    }
+  }
+}

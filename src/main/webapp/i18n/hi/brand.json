@@ -1,0 +1,28 @@
+{
+  "evaradripApp": {
+    "brand": {
+      "home": {
+        "title": "Brands",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Brand बनाएँ",
+        "createOrEditLabel": "Brand बनाएँ या संपादित करें",
+        "notFound": "No Brands found"
+      },
+      "created": "एक नया Brand [identifier: {{ param }}] तैयार है",
+      "updated": "एक Brand [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Brand [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Brand [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Brand"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "logoUrl": "Logo Url",
+      "isActive": "Is Active",
+      "products": "Products"
+    }
+  }
+}

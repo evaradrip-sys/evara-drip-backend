@@ -1,0 +1,530 @@
+/**
+ * Evaradrip E-commerce Application
+ * JHipster JDL Model v8.11.0
+ * @author omprakashsingh
+ */
+
+// ==========================================
+// APPLICATION CONFIGURATION
+// ==========================================
+application {
+  config {
+    baseName evaradrip
+    applicationType monolith
+    packageName com.evaradrip.commerce
+    authenticationType jwt
+    prodDatabaseType postgresql
+    devDatabaseType h2Disk
+    cacheProvider ehcache
+    buildTool maven
+    clientFramework react
+    clientTheme none
+    enableTranslation true
+    nativeLanguage en
+    languages [en, hi, fr]
+    testFrameworks [cypress, cucumber, gatling]
+    websocket spring-websocket
+    messageBroker false
+    serviceDiscoveryType false
+    enableSwaggerCodegen true
+  }
+  entities *
+}
+
+// ==========================================
+// ENTITY DEFINITIONS
+// ==========================================
+
+/**
+ * Brand entity for product manufacturers
+ */
+entity Brand {
+  name String required maxlength(100)
+  description TextBlob
+  logoUrl String maxlength(500)
+  isActive Boolean
+}
+
+/**
+ * Product Category entity
+ */
+entity Category {
+  name String required maxlength(100)
+  description TextBlob
+  imageUrl String maxlength(500)
+  href String required maxlength(200) pattern(/^\/[a-z-]+$/)
+  isFeatured Boolean
+  displayOrder Integer
+}
+
+/**
+ * Main Product entity
+ */
+entity Product {
+  name String required maxlength(255)
+  description TextBlob
+  price BigDecimal required min(0)
+  originalPrice BigDecimal min(0)
+  sku String unique maxlength(100)
+  isNew Boolean
+  isOnSale Boolean
+  rating BigDecimal min(0) max(5)
+  reviewsCount Integer min(0)
+  stockCount Integer required min(0)
+  inStock Boolean
+  features TextBlob
+  metaTitle String maxlength(255)
+  metaDescription String maxlength(500)
+  metaKeywords String maxlength(255)
+  status ProductStatus
+  weight BigDecimal min(0)
+  dimensions String maxlength(100)
+}
+
+/**
+ * Product Images entity
+ */
+entity ProductImage {
+  imageUrl String required maxlength(500)
+  altText String maxlength(255)
+  isPrimary Boolean
+  displayOrder Integer min(0)
+}
+
+/**
+ * Product Variants (Size, Color combinations)
+ */
+entity ProductVariant {
+  variantSize ClothingSize required
+  color String required maxlength(50)
+  sku String unique required maxlength(100)
+  stockCount Integer required min(0)
+  priceAdjustment BigDecimal
+  barcode String maxlength(100)
+  weight BigDecimal min(0)
+}
+
+/**
+ * Extended User Profile
+ */
+entity UserProfile {
+  phoneNumber String maxlength(20)
+  dateOfBirth LocalDate
+  gender Gender
+  avatarUrl String maxlength(500)
+  loyaltyPoints Integer min(0)
+  membershipLevel MembershipLevel
+  preferences TextBlob
+  newsletterSubscribed Boolean
+}
+
+/**
+ * User Address entity
+ */
+entity UserAddress {
+  addressType AddressType required
+  fullName String required maxlength(100)
+  phoneNumber String required maxlength(20)
+  streetAddress String required maxlength(255)
+  streetAddress2 String maxlength(255)
+  city String required maxlength(100)
+  state String required maxlength(100)
+  zipCode String required maxlength(20)
+  country String required maxlength(100)
+  landmark String maxlength(255)
+  isDefault Boolean
+}
+
+/**
+ * Shopping Cart entity
+ */
+entity Cart {
+  sessionId String maxlength(255)
+  status CartStatus
+  expiresAt Instant
+}
+
+/**
+ * Cart Items entity
+ */
+entity CartItem {
+  quantity Integer required min(1)
+  addedPrice BigDecimal required min(0)
+}
+
+/**
+ * Order entity
+ */
+entity Order {
+  orderNumber String unique required maxlength(50)
+  status OrderStatus required
+  totalAmount BigDecimal required min(0)
+  subtotalAmount BigDecimal required min(0)
+  taxAmount BigDecimal min(0)
+  shippingAmount BigDecimal min(0)
+  discountAmount BigDecimal min(0)
+  paymentMethod PaymentMethod
+  paymentStatus PaymentStatus
+  shippingMethod String maxlength(100)
+  trackingNumber String maxlength(255)
+  notes TextBlob
+  cancelReason String maxlength(500)
+  returnReason String maxlength(500)
+  refundAmount BigDecimal min(0)
+  estimatedDeliveryDate LocalDate
+  deliveredDate ZonedDateTime
+  shippedDate ZonedDateTime
+}
+
+/**
+ * Order Items entity
+ */
+entity OrderItem {
+  quantity Integer required min(1)
+  unitPrice BigDecimal required min(0)
+  totalPrice BigDecimal required min(0)
+  discountAmount BigDecimal min(0)
+  taxAmount BigDecimal min(0)
+  productSnapshot TextBlob
+}
+
+/**
+ * Wishlist entity
+ */
+entity Wishlist {
+  priority Integer min(1) max(5)
+  notes String maxlength(500)
+}
+
+/**
+ * Product Reviews entity
+ */
+entity Review {
+  rating Integer required min(1) max(5)
+  title String maxlength(255)
+  comment TextBlob
+  helpfulCount Integer min(0)
+  notHelpfulCount Integer min(0)
+  verifiedPurchase Boolean
+  status ReviewStatus
+  response TextBlob
+  responseDate ZonedDateTime
+}
+
+/**
+ * Promotion/Campaign entity
+ */
+entity Promotion {
+  name String required maxlength(255)
+  description TextBlob
+  promoCode String unique maxlength(50)
+  discountType DiscountType required
+  discountValue BigDecimal required min(0)
+  minPurchaseAmount BigDecimal min(0)
+  maxDiscountAmount BigDecimal min(0)
+  startDate ZonedDateTime required
+  endDate ZonedDateTime required
+  usageLimit Integer min(0)
+  usageCount Integer min(0)
+  isActive Boolean
+  applicableCategories TextBlob
+  excludedProducts TextBlob
+  termsAndConditions TextBlob
+}
+
+/**
+ * Product-Promotion junction table
+ */
+entity ProductPromotion {
+  priority Integer min(1)
+  isExclusive Boolean
+}
+
+/**
+ * Payment Transaction entity
+ */
+entity Payment {
+  transactionId String unique required maxlength(255)
+  amount BigDecimal required min(0)
+  currency String required maxlength(3)
+  method PaymentMethod required
+  status PaymentStatus required
+  gatewayResponse TextBlob
+  referenceNumber String maxlength(255)
+  failureReason String maxlength(500)
+}
+
+/**
+ * Shipping entity
+ */
+entity Shipping {
+  carrier String required maxlength(100)
+  trackingNumber String maxlength(255)
+  estimatedDelivery LocalDate
+  actualDelivery ZonedDateTime
+  shippingCost BigDecimal min(0)
+  status ShippingStatus
+  notes TextBlob
+}
+
+/**
+ * Inventory tracking entity
+ */
+entity Inventory {
+  quantity Integer required
+  reservedQuantity Integer min(0)
+  warehouse String maxlength(100)
+  lastRestocked ZonedDateTime
+  reorderLevel Integer min(0)
+  reorderQuantity Integer min(0)
+}
+
+/**
+ * Coupon entity for user-specific discounts
+ */
+entity Coupon {
+  code String unique required maxlength(50)
+  description TextBlob
+  discountType DiscountType required
+  discountValue BigDecimal required min(0)
+  validFrom ZonedDateTime required
+  validUntil ZonedDateTime required
+  maxUses Integer min(1)
+  currentUses Integer min(0)
+  minOrderValue BigDecimal min(0)
+  isActive Boolean
+}
+
+/**
+ * Notification entity
+ */
+entity Notification {
+  type NotificationType required
+  title String required maxlength(255)
+  message TextBlob required
+  isRead Boolean
+  metadata TextBlob
+}
+
+// ==========================================
+// ENUMERATIONS
+// ==========================================
+
+enum ProductStatus {
+  ACTIVE,
+  INACTIVE,
+  OUT_OF_STOCK,
+  DISCONTINUED,
+  COMING_SOON
+}
+
+enum ClothingSize {
+  XS,
+  S,
+  M,
+  L,
+  XL,
+  XXL,
+  XXXL,
+  FREE_SIZE
+}
+
+enum Gender {
+  MALE,
+  FEMALE,
+  OTHER,
+  PREFER_NOT_TO_SAY
+}
+
+enum MembershipLevel {
+  BRONZE,
+  SILVER,
+  GOLD,
+  PLATINUM,
+  DIAMOND
+}
+
+enum AddressType {
+  SHIPPING,
+  BILLING,
+  BOTH
+}
+
+enum CartStatus {
+  ACTIVE,
+  ABANDONED,
+  CONVERTED,
+  EXPIRED,
+  MERGED
+}
+
+enum OrderStatus {
+  PENDING,
+  CONFIRMED,
+  PROCESSING,
+  PACKED,
+  SHIPPED,
+  OUT_FOR_DELIVERY,
+  DELIVERED,
+  CANCELLED,
+  REFUNDED,
+  RETURNED,
+  FAILED
+}
+
+enum PaymentMethod {
+  CREDIT_CARD,
+  DEBIT_CARD,
+  NET_BANKING,
+  UPI,
+  WALLET,
+  COD,
+  EMI,
+  PAYPAL
+}
+
+enum PaymentStatus {
+  PENDING,
+  PROCESSING,
+  SUCCESS,
+  FAILED,
+  CANCELLED,
+  REFUNDED,
+  PARTIAL_REFUND
+}
+
+enum ReviewStatus {
+  PENDING,
+  APPROVED,
+  REJECTED,
+  FLAGGED
+}
+
+enum DiscountType {
+  PERCENTAGE,
+  FIXED_AMOUNT,
+  BUY_X_GET_Y,
+  FREE_SHIPPING
+}
+
+enum ShippingStatus {
+  PENDING,
+  PROCESSING,
+  SHIPPED,
+  IN_TRANSIT,
+  OUT_FOR_DELIVERY,
+  DELIVERED,
+  FAILED,
+  RETURNED
+}
+
+enum NotificationType {
+  ORDER_PLACED,
+  ORDER_SHIPPED,
+  ORDER_DELIVERED,
+  PAYMENT_SUCCESS,
+  PAYMENT_FAILED,
+  PROMOTION,
+  WISHLIST,
+  REVIEW_RESPONSE,
+  GENERAL
+}
+
+// ==========================================
+// RELATIONSHIPS
+// ==========================================
+
+relationship OneToOne {
+  UserProfile{user(login)} to User with builtInEntity
+  Cart{user(login)} to User with builtInEntity
+}
+
+relationship OneToMany {
+  Brand{products} to Product{brand(name)}
+  Category{products} to Product{category(name) required}
+  Category{subcategories} to Category{parent(name)}
+  Product{images} to ProductImage{product(name) required}
+  Product{variants} to ProductVariant{product(name) required}
+  Product{reviews} to Review{product(name) required}
+  Product{inventory} to Inventory{product(name) required}
+  Cart{items} to CartItem{cart required}
+  Order{items} to OrderItem{order required}
+  Order{payments} to Payment{order}
+  Order{shipping} to Shipping{order}
+  UserProfile{addresses} to UserAddress{user required}
+  UserProfile{orders} to Order{user required}
+  UserProfile{notifications} to Notification{user required}
+}
+
+relationship ManyToOne {
+  CartItem{product(name) required} to Product
+  CartItem{variant} to ProductVariant
+  OrderItem{product(name) required} to Product
+  OrderItem{variant} to ProductVariant
+  Review{user(login) required} to User with builtInEntity
+  Order{shippingAddress required} to UserAddress
+  Order{billingAddress required} to UserAddress
+}
+
+relationship ManyToMany {
+  Product{promotions} to Promotion{products}
+  UserProfile{wishlist} to Product{wishlisted}
+  UserProfile{coupons} to Coupon{users}
+  Promotion{applicableProducts} to Product{applicablePromotions}
+  Category{featuredProducts} to Product{featuredInCategories}
+}
+
+// ==========================================
+// SERVICE & DTO CONFIGURATION
+// ==========================================
+
+// Generate Service layer with implementation
+service all with serviceImpl
+
+// Generate DTOs for all entities
+dto all with mapstruct
+
+// Enable pagination for list operations
+paginate all with pagination
+
+// Enable filtering for search operations
+filter all
+
+// Enable caching for frequently accessed entities
+use cacheManager for Product, Category, Brand
+
+// Enable audit fields
+use auditedEntity for Product, Order, Payment, Review
+
+// Microservice configuration (if needed in future)
+// microservice all with evaradrip
+
+// ==========================================
+// VALIDATION & BUSINESS RULES
+// ==========================================
+
+// Additional validation rules can be added in the generated code
+// Examples:
+// - Product price should be less than original price when on sale
+// - Cart should expire after 24 hours of inactivity
+// - Order status transitions should follow business workflow
+// - Inventory should be updated on order placement/cancellation
+// - Review can only be posted for delivered orders
+
+// ==========================================
+// DEPLOYMENT NOTES
+// ==========================================
+
+/**
+ * After generation, consider implementing:
+ * 1. Custom repositories for complex queries
+ * 2. Event listeners for order status changes
+ * 3. Scheduled jobs for cart expiration
+ * 4. Email notifications service
+ * 5. SMS integration for order updates
+ * 6. Payment gateway integration
+ * 7. Shipping provider APIs
+ * 8. Recommendation engine
+ * 9. Analytics and reporting dashboards
+ * 10. Admin panel customizations
+ */

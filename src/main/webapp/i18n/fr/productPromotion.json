@@ -1,0 +1,25 @@
+{
+  "evaradripApp": {
+    "productPromotion": {
+      "home": {
+        "title": "ProductPromotions",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Product Promotion",
+        "createOrEditLabel": "Créer ou éditer un Product Promotion",
+        "notFound": "Aucun Product Promotion trouvé"
+      },
+      "created": "Un nouveau Product Promotion a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Product Promotion avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Product Promotion avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Product Promotion {{ id }} ?"
+      },
+      "detail": {
+        "title": "Product Promotion"
+      },
+      "id": "ID",
+      "priority": "Priority",
+      "isExclusive": "Is Exclusive"
+    }
+  }
+}

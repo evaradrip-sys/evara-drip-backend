@@ -1,0 +1,51 @@
+{
+  "evaradripApp": {
+    "product": {
+      "home": {
+        "title": "Products",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Product बनाएँ",
+        "createOrEditLabel": "Product बनाएँ या संपादित करें",
+        "notFound": "No Products found"
+      },
+      "created": "एक नया Product [identifier: {{ param }}] तैयार है",
+      "updated": "एक Product [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Product [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Product [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Product"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "price": "Price",
+      "originalPrice": "Original Price",
+      "sku": "Sku",
+      "isNew": "Is New",
+      "isOnSale": "Is On Sale",
+      "rating": "Rating",
+      "reviewsCount": "Reviews Count",
+      "stockCount": "Stock Count",
+      "inStock": "In Stock",
+      "features": "Features",
+      "metaTitle": "Meta Title",
+      "metaDescription": "Meta Description",
+      "metaKeywords": "Meta Keywords",
+      "status": "Status",
+      "weight": "Weight",
+      "dimensions": "Dimensions",
+      "images": "Images",
+      "variants": "Variants",
+      "reviews": "Reviews",
+      "inventory": "Inventory",
+      "promotions": "Promotions",
+      "brand": "Brand",
+      "category": "Category",
+      "wishlisted": "Wishlisted",
+      "applicablePromotions": "Applicable Promotions",
+      "featuredInCategories": "Featured In Categories"
+    }
+  }
+}

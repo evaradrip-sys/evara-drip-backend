@@ -1,0 +1,28 @@
+{
+  "evaradripApp": {
+    "cart": {
+      "home": {
+        "title": "Carts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Cart बनाएँ",
+        "createOrEditLabel": "Cart बनाएँ या संपादित करें",
+        "notFound": "No Carts found"
+      },
+      "created": "एक नया Cart [identifier: {{ param }}] तैयार है",
+      "updated": "एक Cart [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Cart [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Cart [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Cart"
+      },
+      "id": "ID",
+      "sessionId": "Session Id",
+      "status": "Status",
+      "expiresAt": "Expires At",
+      "user": "User",
+      "items": "Items"
+    }
+  }
+}

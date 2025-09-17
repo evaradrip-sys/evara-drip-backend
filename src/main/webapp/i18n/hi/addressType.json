@@ -1,0 +1,10 @@
+{
+  "evaradripApp": {
+    "AddressType": {
+      "null": "",
+      "SHIPPING": "SHIPPING",
+      "BILLING": "BILLING",
+      "BOTH": "BOTH"
+    }
+  }
+}

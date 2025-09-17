@@ -1,0 +1,31 @@
+{
+  "evaradripApp": {
+    "productVariant": {
+      "home": {
+        "title": "ProductVariants",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Product Variant",
+        "createOrEditLabel": "Créer ou éditer un Product Variant",
+        "notFound": "Aucun Product Variant trouvé"
+      },
+      "created": "Un nouveau Product Variant a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Product Variant avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Product Variant avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Product Variant {{ id }} ?"
+      },
+      "detail": {
+        "title": "Product Variant"
+      },
+      "id": "ID",
+      "variantSize": "Variant Size",
+      "color": "Color",
+      "sku": "Sku",
+      "stockCount": "Stock Count",
+      "priceAdjustment": "Price Adjustment",
+      "barcode": "Barcode",
+      "weight": "Weight",
+      "product": "Product"
+    }
+  }
+}
