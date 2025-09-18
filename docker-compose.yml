@@ -1,0 +1,35 @@
+services:
+  evaradrip:
+    image: evaradrip
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - SPRING_PROFILES_ACTIVE=prod,api-docs
+      - MANAGEMENT_PROMETHEUS_METRICS_EXPORT_ENABLED=true
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://evaradrip-postgresql:5432/evaradrip
+      - SPRING_LIQUIBASE_URL=jdbc:postgresql://evaradrip-postgresql:5432/evaradrip
+    ports:
+      - 8080:8080
+    healthcheck:
+      test:
+        - CMD
+        - curl
+        - -f
+        - http://localhost:8080/management/health
+      interval: 5s
+      timeout: 5s
+      retries: 40
+    depends_on:
+      evaradrip-postgresql:
+        condition: service_healthy
+  evaradrip-postgresql:
+    image: postgres:17.4
+    environment:
+      - POSTGRES_USER=evaradrip
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U $${POSTGRES_USER}
+      interval: 5s
+      timeout: 5s
+      retries: 10
