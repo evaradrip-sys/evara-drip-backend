@@ -1,6 +1,7 @@
 {
   "generator-jhipster": {
     "applicationType": "monolith",
+    "appsFolders": ["evaradrip"],
     "authenticationType": "jwt",
     "baseName": "evaradrip",
     "buildTool": "maven",
@@ -8,6 +9,7 @@
     "clientFramework": "react",
     "clientTheme": "none",
     "devDatabaseType": "h2Disk",
+    "directoryPath": "../",
     "enableSwaggerCodegen": true,
     "enableTranslation": true,
     "entities": [
@@ -37,10 +39,11 @@
     "languages": ["en", "hi", "fr"],
     "lastLiquibaseTimestamp": 1758145937000,
     "messageBroker": false,
+    "monitoring": "no",
     "nativeLanguage": "en",
     "packageName": "com.evaradrip.commerce",
     "prodDatabaseType": "postgresql",
-    "serviceDiscoveryType": false,
+    "serviceDiscoveryType": "no",
     "testFrameworks": ["cypress", "cucumber", "gatling"],
     "websocket": "spring-websocket"
   }
